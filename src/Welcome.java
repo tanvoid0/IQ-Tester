@@ -19,6 +19,7 @@ import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
 import java.awt.Color;
 import java.awt.Window.Type;
+import java.util.Objects;
 
 public class Welcome {
 
@@ -111,7 +112,7 @@ public class Welcome {
         
         
 		btnWc = new JButton("Welcome!");
-		btnWc.setIcon(new ImageIcon(Welcome.class.getResource("/icon64/binary-thinking.png")));
+		btnWc.setIcon(new ImageIcon(Objects.requireNonNull(Welcome.class.getResource("/icon64/binary-thinking.png"))));
 		btnWc.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent e) {
